@@ -1,3 +1,4 @@
+import { Button } from "@mui/material"
 import React, { useState } from "react"
 
 const Maths = () => {
@@ -15,48 +16,62 @@ const Maths = () => {
     <React.Fragment>
       <div>{count}</div>
       <div style={buttonContainerStyle}>
-        <button
+        <Button
+          variant="contained"
           style={buttonStyle}
           onClick={() => setCount(count + 1)}
+          sx={{ marginBottom: 3 }}
         >
           +1
-        </button>
-        <button
+        </Button>
+        <Button
+          variant="contained"
           style={buttonStyle}
           onClick={() => setCount(count + 10)}
+          sx={{ marginBottom: 3 }}
         >
           +10
-        </button>
-        <button
+        </Button>
+        <Button
+          variant="contained"
           style={buttonStyle}
           onClick={() => setCount(count + 100)}
+          sx={{ marginBottom: 3 }}
         >
           +100
-        </button>
-        <button
+        </Button>
+        <Button
+          variant="contained"
           style={buttonStyle}
           onClick={() => setCount(count - 1)}
+          sx={{ marginBottom: 3 }}
         >
           -1
-        </button>
-        <button
+        </Button>
+        <Button
+          variant="contained"
           style={buttonStyle}
           onClick={() => setCount(count - 10)}
+          sx={{ marginBottom: 3 }}
         >
           -10
-        </button>
-        <button
+        </Button>
+        <Button
+          variant="contained"
           style={buttonStyle}
           onClick={() => setCount(count - 100)}
+          sx={{ marginBottom: 3 }}
         >
           -100
-        </button>
-        <button
+        </Button>
+        <Button
+          variant="contained"
           style={buttonStyle}
           onClick={() => setCount(prevCount => prevCount + 500)}
+          sx={{ marginBottom: 3 }}
         >
           +500
-        </button>
+        </Button>
       </div>
     </React.Fragment>
   )
