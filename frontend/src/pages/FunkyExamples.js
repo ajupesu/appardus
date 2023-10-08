@@ -17,7 +17,6 @@ function App() {
 
   return (
     <div>
-      <Appbar />
       <div className="Container">
         <h1>Hi</h1>
         <New />

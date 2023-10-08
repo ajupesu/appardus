@@ -10,6 +10,8 @@ import "./index.css"
 import reportWebVitals from "./reportWebVitals"
 import App from "./App"
 import FunkyExamples from "./pages/FunkyExamples"
+import Todo from "./components/Todo"
+import TodoPage from "./pages/TodoPage"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -24,6 +26,10 @@ const router = createBrowserRouter(
       <Route
         path="contact"
         element={<h1>Contact</h1>}
+      />
+      <Route
+        path="Todo"
+        element={<TodoPage />}
       />
     </Route>
   )

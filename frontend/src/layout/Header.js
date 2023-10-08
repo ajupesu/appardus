@@ -31,6 +31,10 @@ const links = [
     href: "/funky"
   },
   {
+    title: "Todo",
+    href: "/todo"
+  },
+  {
     title: "Contact",
     href: "/contact"
   }
